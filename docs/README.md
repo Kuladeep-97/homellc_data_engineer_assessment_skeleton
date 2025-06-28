@@ -83,7 +83,7 @@ This project was developed using Visual Studio Code with WSL (Ubuntu) integratio
 
 1.Build the Docker container by using the following command-
 
-  sudo docker-compose -f docker-compose.initial.yml up --build -d
+      sudo docker-compose -f docker-compose.initial.yml up --build -d
 
 2.Create and activate the PYTHON virtual environment and install all the python dependencies using the below code-
 
@@ -131,8 +131,7 @@ Versions used -
  Docker Engine and Docker Compose
  MySQL 8.0
  pandas, mysql-connector-python-(see requirements.txt)
-pandas, mysql-connector-python, etc. (see requirements.txt)
- all the other required libraries are mentioned in requirement.txt
+
 
 ## Submission Guidelines
 
