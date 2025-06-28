@@ -107,8 +107,11 @@ This project was developed using Visual Studio Code with WSL (Ubuntu) integratio
 
 There are four python files for the ETL process-
 1.db.py- This file contains the function create the connection instance with mysql
+
 2.transform.py-The ETL process extracts raw csv file and all the non numerical columns with empty values are replaced by 'NA'.All the numerical columns given in this dataset('fake_data.csv') was found to have no missing values hence only the non numerical columns with missing values were transformed.And an extra column called 'Age'(2025-'Year_Built')is added into dataframe as this is a better metric for measuring worth of properties compared to'year_built'.
+
 3.load_db.py- This is the function which inserts records to the mysql database
+
 4.load.py-This is the final file which initiates the migration of tables.Functions from all the other ETL .py files are imported to this file and for starting the entire ETL process just this file has to be run
 
 > - Provide instructions and code snippets for running the ETL 
