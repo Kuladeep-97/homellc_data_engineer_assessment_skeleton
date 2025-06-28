@@ -92,10 +92,12 @@ This project was developed using Visual Studio Code with WSL (Ubuntu) integratio
       pip install -r requirements.txt
 
 3.Test the connection to the docker container using below code and enter the password given-
+
       sudo docker exec -it mysql_ctn mysql -u db_user -p
  # password:6equj5_db_user
 
 4.Run sql commands to test and validate the tables, example SQL query below -
+
         USE home_db;
         SELECT COUNT(*) FROM property;
    
@@ -124,6 +126,7 @@ This command will migrate all the files to the target database
 This project was developed using Visual Studio Code with WSL (Ubuntu) integration, which is recommended for a smooth cross-platform development experience on Windows.
 
 Versions used -
+
  Python 3.12 (in a virtual environment)
  Docker Engine and Docker Compose
  MySQL 8.0
