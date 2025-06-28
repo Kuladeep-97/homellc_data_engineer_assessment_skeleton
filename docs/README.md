@@ -71,8 +71,8 @@ Use **MySQL** and SQL for all database work
 
 > **Document your database design and solution here:**  
 > - Explain your schema and any design decisions-
-The dataset is normalized into 6 different tables with 'property' table as central.
-'property(id) is used as the foreign key for all the other tables.This is done to capture 1:1 relationship between property and its associated tables(leads,HOA,Rehab,Taxes,and Valuation).'Varchar' and 'text' data types are used to preserve strings.Text is used where indexing is not crucial and the length is large.'VARCHAR' is used for preserving smaller strings according to the contraints and which can be indexed.'INT' type is used for numbers with no decimal points and 'DECIMAL' type is used for number with decimal points in order to preserve the precision.
+
+The dataset is normalized into 6 different tables with 'property' table as central.property(id) is used as the foreign key for all the other tables.This is done to capture 1:1 relationship between property and its associated tables(leads,HOA,Rehab,Taxes,and Valuation).'Varchar' and 'text' data types are used to preserve strings.Text is used where indexing is not crucial and the length is large.'VARCHAR' is used for preserving smaller strings according to the contraints and which can be indexed.'INT' type is used for numbers with no decimal points and 'DECIMAL' type is used for number with decimal points in order to preserve the precision.
 Schema is written clearly for each table such that no other data types other than the defined type can be migrated to the target database tables.
 
 This design was chosen beacuse of its centralized key structure which is very easy to query and join property and its related tables.Data integrity is maintained throughout the tables due to the usage of foreign key.This design is very modular and scalable.
@@ -82,6 +82,7 @@ This design was chosen beacuse of its centralized key structure which is very ea
 This project was developed using Visual Studio Code with WSL (Ubuntu) integration, which is recommended for a smooth cross-platform development experience on Windows.
 
 1.Build the Docker container by using the following command-
+
   sudo docker-compose -f docker-compose.initial.yml up --build -d
 
 2.Create and activate the PYTHON virtual environment and install all the python dependencies using the below code-
